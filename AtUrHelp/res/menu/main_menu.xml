@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/adminactivation"   android:title="Admin Activation"></item>
+    <item android:id="@+id/complaintList"   android:title="Admin Complaints"></item>
+    <item android:id="@+id/customerComplaintList"   android:title="Customer Complaints"></item>
+</menu>

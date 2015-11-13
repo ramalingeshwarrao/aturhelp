@@ -1,0 +1,82 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableRow
+        android:id="@+id/customertableRow3"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="Subject"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cuslogsubject"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="40dip"
+            android:layout_weight="1"
+            android:ems="10" >
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/custtableRow4"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="Description"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/custlogdescription"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="40dip"
+            android:layout_weight="1"
+            android:ems="10" />
+    </TableRow>
+    
+        <TableRow
+        android:id="@+id/custtableRow5"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="Status"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/custlogstatus"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="40dip"
+            android:layout_weight="1"
+            android:ems="10" />
+    </TableRow>
+    
+        <TableRow
+        android:id="@+id/custtableRow6"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="Ticket Id"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/custlogticket"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="40dip"
+            android:layout_weight="1"
+            android:ems="10" />
+    </TableRow>
+
+</TableLayout>

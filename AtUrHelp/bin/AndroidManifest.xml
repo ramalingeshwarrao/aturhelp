@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aturhelp.aturhelp"
+    android:versionCode="11"
+    android:versionName="1.11" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    
+    <!-- To verify whether network is available or not -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    <!--
+     Creates a custom permission so only this app can receive its messages.
+
+     NOTE: the permission *must* be called PACKAGE.permission.C2D_MESSAGE,
+           where PACKAGE is the application's package name.
+    -->
+    <permission
+        android:name="com.ketan.demo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission
+        android:name="com.ketan.demo.permission.C2D_MESSAGE" />
+    
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+    
+    <!-- Message permissions -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    
+    <!-- By using this permission we are verifying whether app is in foreground or not -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.aturhelp.aturhelp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity" >
+        </activity>
+        <activity
+            android:name=".LocationActivity" >
+        </activity>
+        <activity
+            android:name=".ServicesPGRLActivity" >
+        </activity>
+        <activity
+            android:name=".ServicesMCLActivity" >
+        </activity>
+        <activity
+            android:name=".ComplaintActivity" >
+        </activity>
+        <activity
+            android:name=".AdminActivation" >
+        </activity>
+        <activity
+            android:name=".AdminLogActivity" >
+        </activity>
+        <activity
+            android:name=".CustomerLogActivity" >
+        </activity>
+        
+        <receiver
+            android:name="com.aturhelp.gcm.receiver.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.aturhelp.aturhelp" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.aturhelp.gcm.handler.GcmMessageHandler" />
+    </application>
+
+</manifest>

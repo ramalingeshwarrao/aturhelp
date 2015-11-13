@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AtUrHelp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="broadband_prompt">Select</string>
+    <string-array name="broadbandlogtypes">
+        <item>New Connection</item>
+        <item>Internet is not working</item>
+        <item>Net is too slow</item>
+        <item>Others</item>
+	</string-array>
+	<string name="name">Full Name</string>
+	<string name="email">Email</string>
+	<string name="mobileno">Mobile No</string>
+	<string name="password">Password</string>
+	<string name="retrypassword">ReTryPassword</string>
+	<string name="regButtonLabel">Register New Account</string>
+</resources>

@@ -1,0 +1,90 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="Subject"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/logsubject"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="40dip"
+            android:layout_weight="1"
+            android:ems="10" >
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="Description"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/logdescription"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="40dip"
+            android:layout_weight="1"
+            android:ems="10" />
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="Ticket No"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/logticket"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="40dip"
+            android:layout_weight="1"
+            android:ems="10" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_marginTop="20dip"
+     >
+
+        <Button
+            android:id="@+id/logrespond"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            style="@style/btnStyleShakespeare"
+            android:text="Respond"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/logclose"
+            android:layout_width="wrap_content"
+            style="@style/btnStyleShakespeare"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="40dip"
+            android:layout_weight="1"
+            android:text="Close"
+            android:ems="10" />
+        
+    </TableRow>
+    
+
+
+</TableLayout>
